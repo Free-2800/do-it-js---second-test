@@ -9,20 +9,20 @@
 <body>
     <h1>3의 배수 찾기</h1>
     <script>
-        var o = 0;
+        var o = 0; // 변수 o의 초깃값을 0으로 정하기 (후에 i까지의 개수 쓸대 사용)
         var i = prompt("몇 까지 3의 배수를 찾을까요?") //변수 i를 prompt문의 대한 값으로 설정
-        for ( var c = 1; c <= i; c++) {
-         if ( c % 3 == 0) {
-            document.write(c + ", ");
-            o++
+        for ( var c = 1; c <= i; c++) { //반복하기 변수 c는 1, c가 i와 같거나(=) 작으면(<) c에다 1 더하기
+         if ( c % 3 == 0) { // 만약 c나누기 3이 0이라면
+            document.write(c + ", "); //웹 페이지 화면에 쓰기 "c + , " (c가 1이면 1, ).
+            o++ // 변수 o에 1 더하기
             
          }
-        else {
+        else { //아니면....... 
 
         }
         }
 
-        document.write("<div>" + "<br>" + i + "까지의 3의 배수의 개수 :" + o + "</div>")
+        document.write("<div>" + "<br>" + i + "까지의 3의 배수의 개수 :" + o + "</div>") //웹 페이지 화면에 쓰기 (한줄 내리고) i까지의 3의 배수의 개수 :o
     </script>
 </body>
 </html>
